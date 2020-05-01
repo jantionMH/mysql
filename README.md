@@ -15,3 +15,8 @@ mysql的安装分为两种，第一种是下载msi文件，相当于安装了独
 输入：show variables like '%time_zone%';
 
 输入： set global time_zone='+8:00';
+
+
+遇到的经验累积：
+如果django的数据库被换掉，则用户名密码也会一起失效，新的数据库建立后，需要重新配置超级用户
+python manage.py cratesuperuser
